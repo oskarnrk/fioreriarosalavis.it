@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  /*font-weight: 600;*/
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: #007AC3;
+}
+
+.main {
+  background-color: #fff;
+  color: black;
+  font-size: larger;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.section.section-sep {
+  background-color: #B8DAFF;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.section ul li {
+  margin: 6px 0;
+}
+
+.section ul li .glyphicon {
+  margin-right: 6px;
+}
+
+.section.header .logo {
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.section.header h2 {
+  margin-top: 0;
+}
+
+.section .services {
+  text-align: center;
+}
+
+.section .services h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.section .services .interflora {
+  width: 70%;
+}
+
+.section .where {
+  text-align: center;
+}
+
+.section.footer {
+  color: #fff;
+  text-align: center;
+  background-color: #007AC3;
+}
+
+.section.footer a,
+.section.footer a:hover,
+.section.footer a:active,
+.section.footer a:visited {
+  color: #fff;
+  font-style: italic;
+}
