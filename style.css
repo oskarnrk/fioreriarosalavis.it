@@ -8,7 +8,6 @@
 body {
   position: relative;
   font-family: 'Raleway', sans-serif;
-  /*font-weight: 600;*/
 }
 
 a,
@@ -26,10 +25,6 @@ a:visited {
 
 .section {
   padding: 2rem 0;
-}
-
-.section h1 {
-  text-align: center;
 }
 
 .section ul li {
@@ -69,6 +64,6 @@ a:visited {
 }
 
 .interflora {
-  max-height: 25rem;
+  max-height: 20rem;
   max-width: 100%;
 }
