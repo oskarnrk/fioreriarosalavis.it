@@ -6,15 +6,71 @@ import Layout from "../layouts/Layout.astro";
   <section class="header">
     <div class="columns">
       <div class="column is-half"></div>
-      <div class="column is-half is-flex is-flex-direction-column is-align-items-center">
+      <div
+        class="column is-half is-flex is-flex-direction-column is-align-items-center"
+      >
         <div class="logo"></div>
         <div class="title">di Nicolodi Pierangelo & C.</div>
         <button class="button is-primary">Contattaci</button>
       </div>
     </div>
   </section>
-  <section>
-    <!-- TODO -->
+  <section class="section square-cards-section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h2 class="title is-size-1 has-text-black">
+            Fiori e piante per ogni occasione
+          </h2>
+          <h3 class="subtitle is-size-3 has-text-black">
+            Coltiviamo bellezza dal 1969
+          </h3>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div
+              class="card-content has-background-primary has-text-white is-size-3"
+            >
+              <ul class="is-disc-list">
+                <li>Composizioni floreali personalizzate</li>
+                <li>Piante da interno ed esterno</li>
+                <li>Consegna a domicilio</li>
+                <li>Allestimenti per eventi</li>
+                <li>Consulenza e cura del verde</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-services">
+    <div class="container">
+      <h2 class="title has-text-centered has-text-black is-size-1">I nostri prodotti</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="card card--momenti">
+            <div class="card-content has-text-white has-text-centered">
+              <h2 class="title">Momenti di vita quotidiana</h2>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card card--matrimonio">
+            <div class="card-content has-text-white has-text-centered">
+              <h2 class="title">Matrimonio</h2>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card card--funebre">
+            <div class="card-content has-text-white has-text-centered">
+              <h2 class="title">Funebre</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </Layout>
 
@@ -42,5 +98,49 @@ import Layout from "../layouts/Layout.astro";
     height: 200px;
     width: 50%;
     filter: brightness(0) invert(1);
+  }
+
+  .card {
+    .card-content {
+      ul.is-disc-list {
+        list-style: unset;
+        padding-inline-start: 3rem;
+      }
+    }
+  }
+
+  /* Make only the cards in the .section-services squares */
+  .section {
+    &-services {
+      .card {
+        aspect-ratio: 1 / 1;
+        display: flex;
+        align-items: stretch;
+        background-size: cover;
+        background-position: center;
+
+        &--momenti {
+          background-image: url("/momenti.webp");
+        }
+
+        &--matrimonio {
+          background-image: url("/matrimonio.webp");
+        }
+
+        &--funebre {
+          background-image: url("/funebre.webp");
+        }
+
+        .card-content {
+          flex: 1 1 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .title, .has-text-white, h2, h1, p {
+            text-shadow: 0 0.25rem 1rem black, 0 0 0.25rem black;
+          }
+        }
+      }
+    }
   }
 </style>

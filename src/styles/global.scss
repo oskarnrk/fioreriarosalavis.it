@@ -1,13 +1,18 @@
 $blue: hsl(216.06741, 71%, 51%);
 
 // Check https://bulma.io/documentation/features/color-palettes/
+
 @use "bulma/sass" with (
-    // $text: black,	
-    // $link: black,
-    $primary: $blue,
-    // $primary: black,
-    // $info: black,
-    // $success: black,
-    // $warning: black,
-    // $danger: black
+  // $text: black,
+  // $link: black,
+  $primary: $blue,
+  // $primary: black,
+  // $info: black,
+  // $success: black,
+  // $warning: black,
+  // $danger: black
 );
+
+body {
+  background: #fff;
+}
