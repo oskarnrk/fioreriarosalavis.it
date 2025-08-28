@@ -3,22 +3,44 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="hero is-fullheight">
-    <div class="hero-body is-flex-direction-column is-align-items-end">
-      <h1 class="title">Fioreria Rosa</h1>
-      <h2 class="subtitle">di Nicolodi Pierangelo & C.</h2>
-	  <button class="button is-primary">Contattaci</button>
+  <section class="header">
+    <div class="columns">
+      <div class="column is-half"></div>
+      <div class="column is-half is-flex is-flex-direction-column is-align-items-center">
+        <div class="logo"></div>
+        <div class="title">di Nicolodi Pierangelo & C.</div>
+        <button class="button is-primary">Contattaci</button>
+      </div>
     </div>
   </section>
   <section>
-	<!-- TODO -->
+    <!-- TODO -->
   </section>
 </Layout>
 
-<style>
-  .hero {
+<style lang="scss">
+  .header {
+    height: 90vh;
     background-image: url("/header.webp");
     background-size: cover;
     background-position: center;
+
+    .columns {
+      height: 100%;
+    }
+
+    .title {
+      color: white;
+    }
+  }
+
+  .logo {
+    display: inline-block;
+    background-image: url("/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 50%;
+    filter: brightness(0) invert(1);
   }
 </style>
